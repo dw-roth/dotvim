@@ -1,7 +1,11 @@
 execute pathogen#infect()
 execute pathogen#helptags()
 
+
+highlight String ctermfg=LightGray
+highlight Comment ctermfg=LightGray
 syntax on
+
 filetype plugin indent on
 
 set number
