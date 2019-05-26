@@ -1,15 +1,17 @@
 execute pathogen#infect()
 execute pathogen#helptags()
 
-
-highlight String ctermfg=LightGray
-highlight Comment ctermfg=LightGray
 syntax on
 
 filetype plugin indent on
 
+:color desert
+
+highlight String ctermfg=LightGray
+highlight Comment ctermfg=LightGray
+
 set number
-set tabstop=2 softtabstop=0 expandtab shiftwidth=2 smarttab
+set tabstop=2 softtabstop=2 expandtab shiftwidth=2 smarttab splitright
 
 set clipboard=unnamed
 
@@ -25,4 +27,6 @@ let g:user_emmet_settings = {
 \  }
 \}
 
+let g:netrw_liststyle = 3
+let g:netrw_banner = 0
 
