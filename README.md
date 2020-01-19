@@ -1,23 +1,23 @@
 # dotvim
 
-##EditorConfig
+## EditorConfig
 https://github.com/editorconfig/editorconfig-vim.git
 
-##Emmet
+## Emmet
 https://github.com/mattn/emmet-vim.git
 
-##Haskell
+## Haskell
 https://github.com/neovimhaskell/haskell-vim.git
 
-##Typescript
+## Typescript
 https://github.com/leafgarland/typescript-vim.git
 
-##JavaScript
+## JavaScript
 https://github.com/pangloss/vim-javascript.git
 
-##Vim Repeat
+## Vim Repeat
 https://github.com/tpope/vim-repeat.git
 
-##Vim Surround
+## Vim Surround
 https://github.com/tpope/vim-surround.git
 
