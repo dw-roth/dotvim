@@ -1,14 +1,12 @@
 #!/bin/bash
 
-cd
-
-echo Create dirs .vim/{autoload,bundle} and download pathogen.vim
+echo Create dirs ~/.vim/{autoload,bundle} and download pathogen.vim
 mkdir -p ~/.vim/{autoload,bundle} && \
 curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
 
 echo Download .vimrc form https://raw.githubusercontent.com/dw-roth/dotvim/master/.vimrc
 
-curl https://raw.githubusercontent.com/dw-roth/dotvim/master/.vimrc -o .vimrc
+curl https://raw.githubusercontent.com/dw-roth/dotvim/master/.vimrc -o ~/.vimrc
 
 cd ~/.vim/bundle
 
@@ -32,5 +30,3 @@ git clone https://github.com/leafgarland/typescript-vim.git
 
 echo install haskell-vim
 git clone https://github.com/neovimhaskell/haskell-vim.git
-
-cd
