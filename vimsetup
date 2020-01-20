@@ -5,8 +5,10 @@ mkdir -p ~/.vim/{autoload,bundle} && \
 curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
 
 echo Download .vimrc form https://raw.githubusercontent.com/dw-roth/dotvim/master/.vimrc
+curl https://raw.githubusercontent.com/dw-roth/dotvim/master/.vimrc -o ~/.vim/.vimrc
 
-curl https://raw.githubusercontent.com/dw-roth/dotvim/master/.vimrc -o ~/.vimrc
+echo Creating symlink to .vimrc -- please enter sudo pwd: 
+sudo ln -s ~/.vim/.vimrc ~/.vimrc
 
 cd ~/.vim/bundle
 
@@ -18,6 +20,9 @@ git clone https://github.com/tpope/vim-repeat.git
 
 echo install vim-surround
 git clone https://github.com/tpope/vim-surround.git
+
+echo install vim-commentary
+git clone https://github.com/tpope/vim-commentary.git
 
 echo install vim-emmett
 git clone https://github.com/mattn/emmet-vim.git 
@@ -31,4 +36,3 @@ git clone https://github.com/leafgarland/typescript-vim.git
 echo install haskell-vim
 git clone https://github.com/neovimhaskell/haskell-vim.git
 
-rm vimsetup
