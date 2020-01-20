@@ -1,0 +1,36 @@
+#!/bin/bash
+
+cd
+
+echo Create dirs .vim/{autoload,bundle} and download pathogen.vim
+mkdir -p ~/.vim/{autoload,bundle} && \
+curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
+
+echo Download .vimrc form https://raw.githubusercontent.com/dw-roth/dotvim/master/.vimrc
+
+curl https://raw.githubusercontent.com/dw-roth/dotvim/master/.vimrc -o .vimrc
+
+cd ~/.vim/bundle
+
+echo install EditorConfig-vim
+git clone https://github.com/editorconfig/editorconfig-vim.git
+
+echo install vim-repeat
+git clone https://github.com/tpope/vim-repeat.git
+
+echo install vim-surround
+git clone https://github.com/tpope/vim-surround.git
+
+echo install vim-emmett
+git clone https://github.com/mattn/emmet-vim.git 
+
+echo install vim-JavaScript
+git clone https://github.com/pangloss/vim-javascript.git
+
+echo install vim-typescript
+git clone https://github.com/leafgarland/typescript-vim.git
+
+echo install haskell-vim
+git clone https://github.com/neovimhaskell/haskell-vim.git
+
+cd
