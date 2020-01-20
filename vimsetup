@@ -30,3 +30,5 @@ git clone https://github.com/leafgarland/typescript-vim.git
 
 echo install haskell-vim
 git clone https://github.com/neovimhaskell/haskell-vim.git
+
+rm vimsetup
