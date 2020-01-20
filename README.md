@@ -1,5 +1,10 @@
 # dotvim
 
+## Usage
+  * curl https://raw.githubusercontent.com/dw-roth/dotvim/master/vimsetup -o vimsetup
+  * chmod u+x vimsetup
+  * ~/vimsetup
+
 ## EditorConfig
 https://github.com/editorconfig/editorconfig-vim.git
 
